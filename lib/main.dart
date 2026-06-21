@@ -22,7 +22,16 @@ class WeatherPageState extends State<WeatherPage>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Text('Weather App'),),
-    );
+      body: Stack(
+        children: [
+          Image.asset(
+            'assets/images/haze.jpg',
+            fit: BoxFit.cover,
+            width: double.infinity,
+            height: double.infinity,
+          )
+        ],
+        ),
+      );
   }
 }
